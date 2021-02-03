@@ -414,5 +414,20 @@ header > img {
     .minor_items > div {
         margin-top: 1em;
     }
+}
+
+
+@media (max-width: 600px) {
+#support {
+    display: none;
+}
+
+.button {
+    display: none;
+}
+
+#mobile-button {
+    display: block;
+}
 
 }
