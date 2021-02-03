@@ -89,7 +89,7 @@ header > img {
 
 .button {
     border: none;
-    color: #dfdfdf;
+    color: #052962;
     font-weight: bold;
     background-color: yellow;
     border-radius: 16px;
@@ -97,7 +97,7 @@ header > img {
 
 .mobile-button {
     border: none;
-    color: #dfdfdf;
+    color: #052962;
     font-weight: bold;
     background-color: yellow;
     border-radius: 16px;
@@ -263,7 +263,7 @@ header > img {
 .section-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -289,7 +289,7 @@ header > img {
   margin: 0%;
   padding: 0;
   background-color: lightgrey;
-  border-top: 2px solid red;
+  border-top: 3px solid red;
 /*   border: 1px dashed green; */
 }
 
@@ -312,7 +312,7 @@ header > img {
   width: 30%;
   margin: 0%;
   background-color: lightgrey;
-  border-top: 2px solid red;
+  border-top: 3px solid red;
 /*   border: 1px dashed green; */
 }
 
@@ -359,4 +359,60 @@ header > img {
   padding: 20px;
   text-align: center;
   background: #ddd;
+}
+
+
+/* Responsive to screen width */
+
+@media (max-width: 1024px) {
+
+.navbar {
+    font-size: 75%;
+}
+
+.section {
+    flex-direction: column;
+}
+.section-header {
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+}
+
+.section-header * {
+    padding-left: 1em;
+    padding-top: 1em;
+    font-size: .75em;
+}
+
+.section-content {
+    width: 100%;
+}
+
+}
+
+@media (max-width: 767px) {
+
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row > div {
+        margin-top: 1em;
+    }
+
+    .large_item, .small_item, .minor_items {
+        width: 75%;
+    }
+
+    .large_item *, .small_item *, .minor_items * {
+        font-size: 1em;
+    }
+
+    .minor_items > div {
+        margin-top: 1em;
+    }
+
 }

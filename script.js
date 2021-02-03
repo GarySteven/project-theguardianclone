@@ -19,25 +19,29 @@ function dateFunction() {
 
 // Blog post content
 $(function() {
-    $("#blog-item-0").load("blog-item-0.html");
+    $("#item0").load("item0.html");
 });
 
 $(function() {
-    $("#blog-item-1").load("blog-item-1.html");
+    $("#item1").load("item1.html");
 });
 
 $(function() {
-    $("#blog-item-2").load("blog-item-1.html");
+    $("#item2").load("item2.html");
 });
 
 $(function() {
-    $("#blog-item-3").load("blog-item-1.html");
+    $("#item3").load("item3.html");
 });
 
 $(function() {
-    $("#blog-item-4").load("blog-item-2.html");
+    $("#item4").load("item4.html");
 });
 
 $(function() {
-    $("#blog-item-5").load("blog-item-3.html");
+    $("#item5").load("item5.html");
+});
+
+$(function() {
+    $("#item6").load("item6.html");
 });
